@@ -1,0 +1,48 @@
+#server:
+#  port: 8081
+#
+#spring:
+#  application:
+#    name: course-service
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/coursedb
+#    username: root
+#    password: root
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8761/eureka/
+#
+#---------------------Postgresql------------------
+
+server:
+  port: 8081
+
+spring:
+  application:
+    name: course-service
+  datasource:
+      url: jdbc:postgresql://localhost:5432/course_db
+      username: postgres        # or the username you set up
+      password: password    # use the password you provided during installation
+      driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
