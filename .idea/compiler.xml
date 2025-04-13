@@ -9,15 +9,15 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-service" />
       </profile>
-      <profile name="Annotation profile for enrollment-service" enabled="true">
+      <profile name="Annotation profile for course-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
         </processorPath>
-        <module name="login-service" />
         <module name="course-service" />
+        <module name="login-service" />
         <module name="registration-service" />
         <module name="enrollment-service" />
       </profile>
